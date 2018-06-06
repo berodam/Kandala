@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MSugiJeong';
+    src: url('MSugiJeong.woff2') format('woff2'),
+        url('MSugiJeong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

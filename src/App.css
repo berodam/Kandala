@@ -1,0 +1,120 @@
+body {
+  font-family: 'AmaticSC',serif;
+}
+h1,h2,h3,h4,h5 {
+  font-family: 'AmaticSC-Bold', serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.inline-icon {
+  max-height: 1.1rem
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.jumbotron-display {
+  font-family: 'AmaticSC', serif;
+  font-size: 10.5rem;
+  margin-left: 1.0rem;
+}
+
+.jumbotron-fluid {
+  background-color: rgba(255, 255, 255);
+}
+#root {
+  background-image: url("assets/pattern4_320.png")
+}
+
+.container {
+  background-color: rgb(233, 233, 233);
+}
+
+
+/* ----------- Navbar ----------- */
+
+.navbar-brand {
+  font-family: 'AmaticSC', serif;
+}
+
+.navBarLogo {
+  margin-bottom: .1rem;
+}
+
+/* ----------- Carousel ----------- */
+
+.carousel-inner {
+  height: 95%;
+}
+
+.carousel-item {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 43.24% 0 0 0; /* 34.37% = 100 / (w / h) = 100 / (640 / 220) */
+}
+
+.carousel-item > img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* ----------- Footer ----------- */
+
+.footer {
+  margin: 2rem .5rem 1rem;
+  color: #999;
+}
+
+/* ----------- Fonts ----------- */
+
+@font-face {
+  font-family: 'AmaticSC';
+  src: url("assets/AmaticSC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'AmaticSC-Bold';
+  src: url("assets/AmaticSC-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'MSugiJeong';
+  src: url('assets/fonts/MSugiJeong.woff2') format('woff2'),
+      url('assets/fonts/MSugiJeong.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
