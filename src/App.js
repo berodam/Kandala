@@ -1,35 +1,28 @@
-import React, { Component } from 'react';
-// import logo from './assets/logo_transparency.png';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
-import Navbar from './components/navbar';
-import ProductCard from './components/card';
-import Footer from './components/footer';
-import Jumbotron from './components/jumbotron';
-import { Container, Row, Col } from 'reactstrap';
+import QnA from './containers/QnA'
+import Home from './containers/Home';
+import About from './containers/About';
+import Crafts from './containers/Crafts';
+import Lessons from './containers/Lessons';
+import Products from './containers/Products';
 
-// fold should be about 1110x600
-// images 1110x480
-class App extends Component {
-  render() {
-    return (
-      <Container>
-        <Navbar />
-        {/* <UncontrolledCarousel items={carouselItems}/>         */}
-        <Jumbotron />
-        <Row>
-          <Col><ProductCard imageSrc='1.jpg' cardTitle='About Kandala'/></Col>
-          <Col><ProductCard imageSrc='2.jpg' cardTitle='Products'/></Col>
-          {/* <Col><ProductCard imageSrc='3.jpg'/></Col>  */}
-        </Row>
-        <Row>
-          <Col><ProductCard imageSrc='4.jpg' cardTitle='Craft Lesons'/></Col>
-          <Col><ProductCard imageSrc='5.jpg' cardTitle='Korean Lessons'/></Col>
-          <Col><ProductCard imageSrc='6.jpg' cardTitle='Q & A'/></Col>   
-        </Row>
-        <Footer />
-      </Container>
-    );
-  }
-}
+import Navbar from './components/navbar';
+
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/crafts" component={Crafts} />
+      <Route path="/lessons" component={Lessons} />
+      <Route path="/products" component={Products} />
+      <Route path="/qna" components={QnA} />
+      <Navbar/>
+    </div>
+  </Router>
+
+);
 
 export default App;
