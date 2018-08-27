@@ -1,8 +1,9 @@
 
 import React from 'react';
 import { Card, CardHeader } from 'reactstrap';
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const ProductCard = (props) => {
   const cardTitle = props.cardTitle || "Default Title";
@@ -18,28 +19,32 @@ const ProductCard = (props) => {
     button:focus {
       outline: none;
     }
+    & > a {
+      text-decoration: none;
+    }
   `
   const Header = styled(CardHeader)`
     font-size: 3rem;
+    color: #777;
+    &:hover {
+      text-decoration: none;
+      color: #777;
+    }
   `
-  const CardA = styled.a`
-    cursor: pointer;
-  `
-  
+
   return (
     <CardWrapper>
-      <CardA>
-        <Card href="">
-          <Header>{cardTitle}</Header>
+        <Card >
+          <Link to={props.to}><Header>{cardTitle}</Header></Link>
           <img top width="100%" src={require('../assets/'+props.imageSrc)} alt={props.imageCaption} />
         </Card>
-      </CardA>
     </CardWrapper>
   );
 };
 
 ProductCard.propTypes = {
   url: PropTypes.string,
+  to: PropTypes.string,
   image: PropTypes.string,
   cardTitle: PropTypes.string,
   imageCaption: PropTypes.imageCaption,

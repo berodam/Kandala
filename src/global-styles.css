@@ -1,0 +1,9 @@
+/* This is where we keep global styles */
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #a1b3d1;
+}

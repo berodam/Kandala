@@ -1,28 +1,40 @@
 import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
+import PropTypes from 'prop-types';
+import { Jumbotron as JumboReact } from 'reactstrap';
 import styled from 'styled-components';
 import TopLine from './topLine';
 import BottomLines from './bottomLines';
 
 const JumbotronFlex = (props) => {
   return (
-    <div>
+    <JumbotronWrapper>
       <Jumbotron fluid>
-        <Wrapper fluid>
-          {/* <img src={require('../assets/bouqet_faded_bkg.png')} alt="some alt text"/>  */}
-          <TopLine />
-          <h1>
-            <InlineLogo src={require('../assets/logo.png')} alt='logo.png'/>
-            <KorSpan>칸달라</KorSpan>
-            <EngSpan>Kandala</EngSpan>
-          </h1>
-          <BottomLines />
-          {/* <p className="lead">Some basic description or tagline goes here. It works in english but it should also work with 한굴</p> */}
-        </Wrapper>
+        <TopLine />
+        <ContentWrapper>
+          <InlineLogo src={require('../assets/logo.png')} alt='logo.png'/>
+          <TextWrapper>
+            <KorSpan>{props.KorSpan}</KorSpan>
+            <EngSpan>{props.EngSpan}</EngSpan>
+          </TextWrapper>
+        </ContentWrapper>
+        <BottomLines />
       </Jumbotron>
-    </div>
+    </JumbotronWrapper>
   );
 }; 
+
+const TextWrapper = styled.div`
+  margin-bottom: 10px;
+`
+
+const Jumbotron = styled(JumboReact)`
+  padding: 2rem 1rem;
+  margin-bottom: 0 !important;
+`
+
+const JumbotronWrapper = styled.div`
+  margin: 0 0 0 0;
+`
 
 const InlineLogo = styled.img`
   height: 10rem;
@@ -39,8 +51,15 @@ const KorSpan = styled.span`
   color: #777;
   margin: 0 1rem;
 `
-const Wrapper = styled(Container)`
+const ContentWrapper = styled.div`
+  align-items: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
 `
+JumbotronFlex.PropTypes = {
+  KorSpan: PropTypes.string,
+  EngSpan: PropTypes.string,
+}
 
 export default JumbotronFlex;

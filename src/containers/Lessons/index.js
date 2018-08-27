@@ -1,6 +1,13 @@
 import React from 'react';
+import Navbar from '../../components/navbar';
+import { Container, Row, Col } from 'reactstrap';
 
-export const Lessons = (props) => {
+export const Lesson = (props) => {
+  return(
+    <Container>
+      
+    </Container>
+  )
 }
 
-export default Lessons;
+export default Lesson;

@@ -12,16 +12,15 @@ class Home extends Component {
   render() {
     return (
       <Container>
-        <Navbar />
-        <Jumbotron />
+        <Jumbotron KorSpan="칸달라" EngSpan="Kandala"/>
         <Row>
-          <Col><ProductCard imageSrc='1.jpg' cardTitle='About Kandala' href='#'/></Col>
-          <Col><ProductCard imageSrc='2.jpg' cardTitle='Products'/></Col>
+          <Col><ProductCard imageSrc='1.jpg' cardTitle='About Kandala' to='#'/></Col>
+          <Col><ProductCard imageSrc='2.jpg' cardTitle='Products' to='/products'/></Col>
         </Row>
         <Row>
-          <Col><ProductCard imageSrc='4.jpg' cardTitle='Craft Lesons'/></Col>
-          <Col><ProductCard imageSrc='5.jpg' cardTitle='Korean Lessons'/></Col>
-          <Col><ProductCard imageSrc='6.jpg' cardTitle='Q & A'/></Col>   
+          <Col><ProductCard imageSrc='4.jpg' cardTitle='Craft Lesons' to='/products'/></Col>
+          <Col><ProductCard imageSrc='5.jpg' cardTitle='Korean Lessons' to='/products'/></Col>
+          <Col><ProductCard imageSrc='6.jpg' cardTitle='Q & A' to='/products'/></Col>   
         </Row>
         <Footer />
       </Container>
