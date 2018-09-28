@@ -28,7 +28,7 @@ const TextWrapper = styled.div`
 `
 
 const Jumbotron = styled(JumboReact)`
-  padding: 2rem 1rem;
+  padding: 3.5em 2em 2em !important;
   margin-bottom: 0 !important;
 `
 

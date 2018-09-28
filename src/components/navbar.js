@@ -90,12 +90,12 @@ export default class NavBarClass extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem href="#">
-                    <NavLink href="/CraftLessons">
+                    <NavLink href="/Crafts">
                     <Icon iconUrl={craftsIcon}/>Craft
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <NavLink href="/KoreanLessons">
+                    <NavLink href="/koreanLessons">
                     <Icon iconUrl={koreanIcon}/>Korean
                     </NavLink>
                   </DropdownItem>
