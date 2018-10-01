@@ -5,6 +5,10 @@ const TopLine = styled.div`
   margin-bottom: ${ (props) => props.spacing || '30px'};
   margin-left: 20px;
   margin-right: 20px;
+  @media (max-width: 576px) { 
+    margin-left: 0;
+    margin-right: 0;
+  }
 `
 
 export default TopLine;

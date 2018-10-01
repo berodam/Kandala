@@ -7,7 +7,11 @@ const BottomLines = styled.div`
   margin-top: ${ props => props.spacing || '30px'};
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: ${ props => props['margin-bottom'] || '0px' }
+  margin-bottom: ${ props => props['margin-bottom'] || '0px' };
+  @media (max-width: 576px) { 
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 `
 

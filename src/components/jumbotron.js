@@ -25,6 +25,9 @@ const JumbotronFlex = (props) => {
 
 const TextWrapper = styled.div`
   margin-bottom: 10px;
+  @media (max-width: 768px) {
+    margin: 0;
+  } 
 `
 
 const Jumbotron = styled(JumboReact)`
@@ -38,24 +41,37 @@ const JumbotronWrapper = styled.div`
 
 const InlineLogo = styled.img`
   height: 10rem;
+  margin: 0 .5rem;
+  @media (max-width: 576px) { 
+    height: 8rem;
+    margin: 0 .25rem;
+  }
 `
 const EngSpan = styled.span`
   font-family: 'AmaticSC-Bold', serif;
   font-size: 5rem;
   color: #777;
-  margin: 0 1rem;
+  margin: 0 .5rem;
+  @media (max-width: 576px) { 
+    font-size: 4rem;
+    margin: 0 .25rem;
+  }
 `
 const KorSpan = styled.span`
   font-family: 'MSugiJeong', serif;
   font-size: 5rem;
   color: #777;
-  margin: 0 1rem;
+  @media (max-width: 576px) { 
+    font-size: 4rem;
+    margin: 0;
+  }
 `
 const ContentWrapper = styled.div`
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `
 JumbotronFlex.PropTypes = {
   KorSpan: PropTypes.string,

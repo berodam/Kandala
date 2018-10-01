@@ -14,6 +14,9 @@ const Header = styled.h2`
   margin: 0 auto 1rem;
   font-size: 4rem;
   text-align: center;
+  @media (max-width: 576px) {
+    font-size: 3.5rem;
+  }
 `
 const Content = styled.div`
   width: 100%;
@@ -22,9 +25,11 @@ const Content = styled.div`
 
 const EngDetails = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `
 const KorDetails = styled.div`
   display: flex;
+  flex-wrap: wrap-reverse;
 `
 const Img = styled.div`
   flex: 1 1 400px;
@@ -32,6 +37,11 @@ const Img = styled.div`
   background-size: 100%;
   max-width: 450px;
   min-height: 100%;
+  @media all and (max-width: 991px) { 
+    min-height: 15em;
+    max-width: 100%;
+    margin-bottom: 0.5em;
+  };
 `
 const TextContainer = styled.div`
   flex: 1 1 400px;

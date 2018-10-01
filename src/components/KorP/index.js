@@ -8,6 +8,13 @@ export const KorP = styled.p`
   border: 1px #777 dashed;
   letter-spacing: -10px;
   padding: 0 2%;
+  @media all and (max-width: 425px) {
+    font-size: 2rem;
+    letter-spacing: -5px;
+  }
+  @media all and (max-width: 991px) { 
+    margin: 0;  
+  }
 `
 export default KorP;
 
