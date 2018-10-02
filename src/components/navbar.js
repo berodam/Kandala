@@ -21,11 +21,11 @@ import styled from 'styled-components';
 
 
 
-const Icon = styled.img`
+const Icon = styled.a`
   content: url(${(props => props.iconUrl)});
   width:20px;
   height:20px;
-  margin: 0 5px;
+  margin: 10px 5px;
 `
 
 const DropdownItem = styled.a`
@@ -41,14 +41,18 @@ const DropdownItem = styled.a`
 
 `
 const LogoHangul = styled.span`
-   font-size: 22px; 
-   margin: 0 4px;
+  font-size: 22px; 
+  margin: 0 4px;
 `;
 const LogoSpan = styled.span`
-   font-size: 25px;
-   margin: 0 4px;
+  font-size: 25px;
+  margin: 0 4px;
 `;
-
+const CenterAnchor = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 export default class NavBarClass extends React.Component {
   constructor(props) {
     super(props);
@@ -101,22 +105,17 @@ export default class NavBarClass extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  More
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem href="#">
-                    <Icon iconUrl={contactIcon}/> Contact
-                  </DropdownItem>
-                  <DropdownItem  href="https://www.instagram.com/kandala.korea/">
-                  <Icon iconUrl={instaIcon}/> Instagram
-                  </DropdownItem>
-                  <DropdownItem>
-                    <NavLink href="/QnA">Q & A</NavLink>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <CenterAnchor>
+                  <Icon iconUrl={contactIcon} href="mailto:iwons@email.com"/>
+                </CenterAnchor>
+              </NavItem>
+              <NavItem>
+                <CenterAnchor>
+                  <Icon iconUrl={instaIcon} href="https://www.instagram.com/kandala.korea/"/>
+                </CenterAnchor>
+              </NavItem>  
+              
             </Nav>
           </Collapse>
         </Navbar>
