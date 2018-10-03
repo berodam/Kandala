@@ -23,9 +23,9 @@ import styled from 'styled-components';
 
 const Icon = styled.a`
   content: url(${(props => props.iconUrl)});
-  width:20px;
-  height:20px;
-  margin: 10px 5px;
+  width: 20px;
+  height: 20px;
+  margin: ${(props) => (props.mainBar) ? "10px 5px" : "0px 5px"};
 `
 
 const DropdownItem = styled.a`
@@ -107,12 +107,12 @@ export default class NavBarClass extends React.Component {
               </UncontrolledDropdown>
               <NavItem>
                 <CenterAnchor>
-                  <Icon iconUrl={contactIcon} href="mailto:iwons@email.com"/>
+                  <Icon iconUrl={contactIcon} mainBar href="mailto:iwons@email.com"/>
                 </CenterAnchor>
               </NavItem>
               <NavItem>
                 <CenterAnchor>
-                  <Icon iconUrl={instaIcon} href="https://www.instagram.com/kandala.korea/"/>
+                  <Icon iconUrl={instaIcon} mainBar href="https://www.instagram.com/kandala.korea/"/>
                 </CenterAnchor>
               </NavItem>  
               
