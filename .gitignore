@@ -1,4 +1,5 @@
 node_modules
 build
-awsmobilejs
+amplify
 cockpit-master
+src/aws-exports.js

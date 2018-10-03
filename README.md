@@ -5,4 +5,4 @@
 <p>I also included styled components and react bootstrap. Styled components because they are great and react bootstrap because when I started I didn't really know what I was doing.</p>
 
 <p>This project is inteded to be deployed to aws mobile hub mostly due to the ease of deployment</p>
-<p><a href="https://aws.amazon.com/blogs/mobile/deploy-a-react-app-to-s3-and-cloudfront-with-aws-mobile-hub/">Mobile hub deployment guide</a></p>
+<p><a href='https://aws-amplify.github.io/amplify-js/media/quick_start?platform=purejs'>Mobile hub deployment guide</a></p>
