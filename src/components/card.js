@@ -30,6 +30,9 @@ const ProductCard = (props) => {
       text-decoration: none;
       color: #777;
     }
+    @media all and (max-width: 1199px) {
+      font-size: 2.5em;
+    }
   `
 
   return (

@@ -1,18 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../../components/Button';
 
 import Jumbotron from '../../components/jumbotron';
 import bunnyPic from '../../assets/6.jpg'
-import plasterPic from '../../assets/1.jpg'
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 
-const Header = styled.h2`
-  font-family: 'AmaticSC-Bold', serif;
-  margin: 0 auto 1rem;
-  font-size: 4rem;
-  text-align: center;
-`
 const Content = styled.div`
   width: 100%;
   padding-bottom: 1em;
@@ -43,7 +35,6 @@ const P = styled.p`
   font-family: 'AmaticSC-Bold', serif;
   font-size: ${(props) => props.fontsize || 3}rem;
   color: #777;
-
 `;
 
 

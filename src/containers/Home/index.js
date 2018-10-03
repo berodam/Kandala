@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-// import logo from './assets/logo_transparency.png';
-import Navbar from '../../components/navbar';
 import ProductCard from '../../components/card';
+import InstaCard from '../../components/InstaCard';
 import Footer from '../../components/footer';
 import Jumbotron from '../../components/jumbotron';
 import { Container, Row, Col } from 'reactstrap';
@@ -18,7 +17,9 @@ class Home extends Component {
         <Row>
           <Col><ProductCard imageSrc='4.jpg' cardTitle='Craft Lesons' to='/crafts'/></Col>
           <Col><ProductCard imageSrc='5.jpg' cardTitle='Korean Lessons' to='/koreanLessons'/></Col>
-          <Col><ProductCard imageSrc='6.jpg' cardTitle='Q & A' to='/qna'/></Col>   
+          <Col>
+            <InstaCard cardTitle='Latest from Kandala' to='https://www.instagram.com/kandala.korea/' />
+          </Col>   
         </Row>
         <Footer />
       </Container>

@@ -1,7 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import QnA from './containers/QnA'
 import Home from './containers/Home';
 import About from './containers/About';
 import Crafts from './containers/Crafts';
@@ -19,7 +18,6 @@ const App = () => (
       <Route path="/crafts" component={Crafts} />
       <Route path="/koreanLessons" component={Lessons} />
       <Route path="/products" component={Products} />
-      <Route path="/qna" components={QnA} />
     </div>
   </Router>
 
