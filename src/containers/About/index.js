@@ -13,17 +13,22 @@ const Header = styled.h2`
   margin: 0 auto;
   font-size: 4rem;
   text-align: center;
+  @media (max-width: 576px) {
+    font-size: 3.5rem;
+  }
 `
 const Content = styled.div`
 `
 
 const EngDetails = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin: .8em 0;
   padding: .8em 0;
 `
 const KorDetails = styled.div`
   display: flex;
+  flex-wrap: wrap-reverse;
   margin: .8em 0;
   padding: .8em 0;
 `
@@ -35,7 +40,8 @@ const ButtonContainer = styled.div`
   margin: .8em 0;
 `
 
-const EngPText = `KANDALA MAKES 100% HANDMADE scented crafts AND PROVIDES CRAFTS LESSONS TAUGHT IN ENGLISH & KOREAN. What are scented crafts? Air fresheners, candles & perfume.`;
+const EngPText = `KANDALA MAKES 100% HANDMADE scented crafts AND PROVIDES CRAFTS LESSONS TAUGHT IN ENGLISH & KOREAN.
+What are scented crafts? Air fresheners, candles & perfume.`;
 const KorPText = `
 바닷가 사람
 물고기 잡아먹구 살구

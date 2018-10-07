@@ -38,6 +38,9 @@ const DropdownItem = styled.a`
   white-space: nowrap;
   background-color: transparent;
   color: rgb(0,0,0,.5);
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 
 `
 const LogoHangul = styled.span`
@@ -52,6 +55,11 @@ const CenterAnchor = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+const Wrapper = styled.div`
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 export default class NavBarClass extends React.Component {
   constructor(props) {
@@ -69,7 +77,7 @@ export default class NavBarClass extends React.Component {
   }
   render() {
     return (
-      <div>
+      <Wrapper>
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">
             <Navbarlogo />
@@ -95,7 +103,7 @@ export default class NavBarClass extends React.Component {
                 <DropdownMenu right>
                   <DropdownItem href="#">
                     <NavLink href="/Crafts">
-                    <Icon iconUrl={craftsIcon}/>Craft
+                    <Icon iconUrl={craftsIcon}/>Crafts
                     </NavLink>
                   </DropdownItem>
                   <DropdownItem>
@@ -107,19 +115,19 @@ export default class NavBarClass extends React.Component {
               </UncontrolledDropdown>
               <NavItem>
                 <CenterAnchor>
-                  <Icon iconUrl={contactIcon} mainBar href="mailto:iwons@email.com"/>
+                  <Icon iconUrl={contactIcon} mainBar href="mailto:iwons@email.com" afterContent="Contact Us"/>
                 </CenterAnchor>
               </NavItem>
               <NavItem>
                 <CenterAnchor>
-                  <Icon iconUrl={instaIcon} mainBar href="https://www.instagram.com/kandala.korea/"/>
+                  <Icon iconUrl={instaIcon} mainBar href="https://www.instagram.com/kandala.korea/" afterContent="Instagram"/>
                 </CenterAnchor>
               </NavItem>  
               
             </Nav>
           </Collapse>
         </Navbar>
-      </div>
+      </Wrapper>
     );
   }
 }
