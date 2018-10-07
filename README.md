@@ -6,3 +6,4 @@
 
 <p>This project is inteded to be deployed to aws mobile hub mostly due to the ease of deployment</p>
 <p><a href='https://aws-amplify.github.io/amplify-js/media/quick_start?platform=purejs'>Mobile hub deployment guide</a></p>
+<p>you can use new amazon amplify for deployment</p>
