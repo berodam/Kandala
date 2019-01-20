@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import styled from 'styled-components';
+ 
 import Button from '../../components/Button';
 import KorP from '../../components/KorP';
 import EngP from '../../components/EngP';
@@ -52,17 +53,6 @@ const ButtonContainer = styled.div`
   text-align: right;
 `
 
-const EngPText = `KANDALA's THE BEST !
-= plaster air freshener
-FULL OF SCENT
-& GOOD FOR HOME`
-const KorPText = `
-바닷가 사람
-물고기 change this 잡아먹구 살구
-산꼴엣 사람
-`
-
-
 export const Products = (props) => {
   return(
     <Container>
@@ -72,15 +62,25 @@ export const Products = (props) => {
         <EngDetails>
           <Img bkImg={bunnyPic} />
           <TextContainer>
-            <EngP>{EngPText}</EngP>
+            <EngP fontsize={3}>
+              <h1>We combine rich fragrance</h1>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with unique designs</p>
+              <h1>One of a kind gift for yourself</h1>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or someone you love</p>
+            </EngP>
           </TextContainer>
         </EngDetails>
         <ButtonContainer>
-          <Button>More Info</Button>
+          <a href='https://smartstore.naver.com/kandala'><Button>Buy Now</Button></a>
         </ButtonContainer>
         <KorDetails>
           <TextContainer>
-            <KorP>{KorPText}</KorP>
+            <KorP fontsize={3}>
+              <h1>칸달라</h1><h2>는 &nbsp;대표제품</h2>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;계란용기 석고방향제</p>
+              <h1>풍부한 향</h1><h2>&nbsp;고리고</h2>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;독특한 디자인</p> 
+            </KorP>
           </TextContainer>
           <Img bkImg={plasterPic} />
         </KorDetails>

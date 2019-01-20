@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 
 //  original widget:
 // <!-- SnapWidget -->
+{/* <iframe src="https://snapwidget.com/embed/609686" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:160px; height:160px"></iframe> */}
 // <script src="https://snapwidget.com/js/snapwidget.js"></script>
 // <iframe src="https://snapwidget.com/embed/605956" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; ">
 // </iframe>
@@ -69,7 +70,7 @@ const InstaCard = (props) => {
         <Card >
           <Header>{cardTitle}</Header>
           <IframeBlocker href={props.to} id="iframeBlocker"></IframeBlocker>
-          <Iframe top src="https://snapwidget.com/embed/605956" class="snapwidget-widget" allowtransparency="true" scrolling="no" />
+          <Iframe top src="https://snapwidget.com/embed/609686" class="snapwidget-widget" allowtransparency="true" scrolling="no" />
         </Card>
     </CardWrapper>
   );

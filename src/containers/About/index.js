@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Button from '../../components/Button';
 import KorP from '../../components/KorP';
@@ -7,6 +8,9 @@ import EngP from '../../components/EngP';
 
 import Jumbotron from '../../components/jumbotron';
 import sticker from '../../assets/sticker.jpg'
+import thankYou from '../../assets/narrow_thanks.jpg'
+import Spacer from '../../components/Spacer';
+
 
 const Header = styled.h2`
   font-family: 'AmaticSC-Bold', serif;
@@ -35,39 +39,43 @@ const KorDetails = styled.div`
 const Img = styled.img`
   height: 100%;
   margin: 0em;
+  flex: 1 1;
 `
 const ButtonContainer = styled.div`
   margin: .8em 0;
 `
-
-const EngPText = `KANDALA MAKES 100% HANDMADE scented crafts AND PROVIDES CRAFTS LESSONS TAUGHT IN ENGLISH & KOREAN.
-What are scented crafts? Air fresheners, candles & perfume.`;
-const KorPText = `
-바닷가 사람
-물고기 잡아먹구 살구
-산꼴엣 사람
-감자 구어먹구 살구
-별나라 사람
-무얼 먹구 사나.
-`
-
 
 export const About = (props) => {
   return(
     <Container>
       <Jumbotron EngSpan="ABOUT KANDALA"/>
       <Content>
-        <Header>KANDALA's PRODUCTS ⊃ STORIES ∪ MEMORIES</Header>
+        <Header>PRODUCTS ⊃ STORIES ∪ MEMORIES</Header>
         <EngDetails>
           <Img src={sticker} />
-          <EngP fontsize={4}>{EngPText}</EngP>
+          <EngP fontsize={3.5}>
+            <p><h1>Kandala</h1></p>
+            <p>makes 100% handmade scendted crafts and provides</p>
+            <p>crafts lessons in both English & Korean</p>
+            <Spacer height={'10px'} />
+            <p>We create scent infused plaster</p>
+            <p>air fresheners, candles & perfumes.</p>
+          </EngP>
         </EngDetails>
         <ButtonContainer>
-          <Button>More Info</Button>
+          <Link to='/products'><Button>More Info</Button></Link>
         </ButtonContainer>
         <KorDetails>
-          <KorP fontsize={3.5}>{KorPText}</KorP>
-          <Img src={sticker} />
+          <KorP fontsize={3}>
+            <h1>칸달라</h1><h2>는</h2>
+            <p>석고방향제와 같은 핸드메이드</p>
+            <p>제품을 만들니다.</p>
+            <br></br>
+            <h1>칸달라</h1><h2>는</h2>
+            <p>취미클래스와 전문가과정수업을</p>
+            <p>영어 또는 한국어 제공합니다.</p>          
+          </KorP>
+          <Img src={thankYou} />
         </KorDetails>
       </Content>
     </Container>

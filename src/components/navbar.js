@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as ReactRouteLink } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -16,10 +17,16 @@ import instaIcon from '../assets/icons/instagram.svg';
 import contactIcon from '../assets/icons/contact.svg';
 import koreanIcon from '../assets/icons/korea.svg';
 import craftsIcon from '../assets/icons/crafts.svg';
-
 import styled from 'styled-components';
 
-
+const Link = styled(ReactRouteLink)`
+  color: rgba(0,0,0,.5);
+  display: block;
+  padding: .5rem 1rem;
+  &:hover {
+    color: rgba(0,0,0,.7);
+  }
+`
 
 const Icon = styled.a`
   content: url(${(props => props.iconUrl)});
@@ -41,7 +48,6 @@ const DropdownItem = styled.a`
   @media (max-width: 768px) {
     text-align: center;
   }
-
 `
 const LogoHangul = styled.span`
   font-size: 22px; 
@@ -79,19 +85,21 @@ export default class NavBarClass extends React.Component {
     return (
       <Wrapper>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">
-            <Navbarlogo />
-              <LogoHangul>칸달라</LogoHangul>
-              <LogoSpan>Kandala</LogoSpan>
-            </NavbarBrand>
+          <NavbarBrand>
+            <Link to='/'>
+              <Navbarlogo />
+                <LogoHangul>칸달라</LogoHangul>
+                <LogoSpan>Kandala</LogoSpan>
+            </Link>
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/about">About</NavLink>
+                <Link to="/about">About</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/products">Products</NavLink>
+                <Link to="/products">Products</Link>
               </NavItem>
               <NavItem>
                 <NavLink href="http://smartstore.naver.com/kandala">Store</NavLink>
@@ -102,20 +110,20 @@ export default class NavBarClass extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem href="#">
-                    <NavLink href="/Crafts">
+                    <Link to="/Crafts">
                     <Icon iconUrl={craftsIcon}/>Crafts
-                    </NavLink>
+                    </Link>
                   </DropdownItem>
                   <DropdownItem>
-                    <NavLink href="/koreanLessons">
-                    <Icon iconUrl={koreanIcon}/>Korean
-                    </NavLink>
+                    <Link to="/koreanLessons">
+                      <Icon iconUrl={koreanIcon}/>Korean
+                    </Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
                 <CenterAnchor>
-                  <Icon iconUrl={contactIcon} mainBar href="mailto:iwons@email.com" afterContent="Contact Us"/>
+                  <Icon iconUrl={contactIcon} mainBar href="mailto:koreanlessonsforyou@gmail.com" afterContent="Contact Us"/>
                 </CenterAnchor>
               </NavItem>
               <NavItem>

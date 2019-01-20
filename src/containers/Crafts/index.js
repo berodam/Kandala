@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import Button from '../../components/Button';
 import KorP from '../../components/KorP';
 import EngP from '../../components/EngP';
-
+import Spacer from '../../components/Spacer';
 import Jumbotron from '../../components/jumbotron';
-import bunnyPic from '../../assets/6.jpg'
-import plasterPic from '../../assets/1.jpg'
+import craftsPink from '../../assets/crafts_pink.jpg'
+import cinnamon from '../../assets/cinnamon.jpg'
 import { Container } from 'reactstrap';
 
 const Header = styled.h2`
@@ -60,14 +60,7 @@ const EngPText = `LET'S MAKE AIR FRESHENERS
 & CANDLES AS A HOBBY!
 BE A PROFESSIONAL
 WITH KANDALA :)`
-const KorPText = `
-바닷가 사람
-물고기 잡아먹구 살구
-산꼴엣 사람
-감자 구어먹구 살구
-별나라 사람
-무얼 먹구 사나.
-`
+
 
 
 export const Crafts = (props) => {
@@ -77,9 +70,18 @@ export const Crafts = (props) => {
       <Content>
         <Header>HOBBY, PROFESSIONAL DEVELOPMENT → KANDALA</Header>
         <EngDetails>
-          <Img bkImg={bunnyPic} />
+          <Img bkImg={craftsPink} />
           <TextContainer>
-            <EngP>{EngPText}</EngP>
+            <EngP fontsize={3}>
+              <p><h1>Kandala's</h1></p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;lessons are suited to any skill</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;level from beginner to expert</p>
+              <Spacer height={'15px'} />
+              <p>&nbsp;&nbsp;Discover a hobby</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as individual as you are.</p>
+              <Spacer />
+              <p><h2>* English/Korean available</h2></p>
+            </EngP>
           </TextContainer>
         </EngDetails>
         <ButtonContainer>
@@ -87,9 +89,18 @@ export const Crafts = (props) => {
         </ButtonContainer>
         <KorDetails>
           <TextContainer>
-            <KorP>{KorPText}</KorP>
+            <KorP fontsize={3}>              
+              <p><h1>칸달라</h1><h2>는</h2></p>
+              <p><h2>석고방향제, 갠들, 아로마 관련</h2></p>
+              <p>원데이 레슨<h2>과 더블어,</h2></p>
+              <Spacer height={'15px'} />
+              <p><h2>한국양초공예협회의</h2><h1>양초공예</h1></p>
+              <p>지 도사과정<h2>을 진행합니다.</h2></p>
+              <Spacer />
+              <p><h2>* 영어/한국어 가능</h2></p>
+            </KorP>
           </TextContainer>
-          <Img bkImg={plasterPic} />
+          <Img bkImg={cinnamon} />
         </KorDetails>
       </Content>
     </Container>

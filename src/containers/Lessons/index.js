@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Jumbotron from '../../components/jumbotron';
-import bunnyPic from '../../assets/6.jpg'
+import bunnyPic from '../../assets/bukchon_village.jpg'
 import { Container } from 'reactstrap';
 
 const Content = styled.div`
@@ -61,12 +61,14 @@ export const Lesson = (props) => {
         <Details>
           <Img bkImg={bunnyPic} />
           <TextContainer>
-            <P>WE ALSO PROVIDE KOREAN LESSONS!</P>
-            <P>FROM BEGINNERS TO ADVANCED, FROM SPEAKING TO TOPIK</P>
-            <P>STUDY KOREAN WITH KANDALA!</P>
+            <P fontsize={4}>We provide private Korean Lessons</P>
+            <P>for any level from beginner to advanced.</P>
+            <P>Lessons are tailored to your goal</P>
+            <P>From reading to TOPIC and everywhere in between.</P>
+            <P fontsize={4}>Let's study with Kandala!</P>
           </TextContainer>
           <ButtonContainer>
-            <A href="mailto:iwon@teachme.net">Contact Us</A>
+            <A href="mailto:koreanlessonsforyou@gmail.com">Contact Us</A>
           </ButtonContainer>
         </Details>      
       </Content>
