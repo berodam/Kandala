@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
             <Row>
             <Col sm="12" md={{ size: 12, offset: 0 }}> <FooterContent>
                 <FooterEnglish>SCENTED CRAFTS, CANDLES & LESSONS</FooterEnglish>
-                <FooterKorean>석고방향제, 갠들 및 원데이 골래스</FooterKorean>
+                <FooterKorean>석고방향제, 캔들 및 원데이 클래스</FooterKorean>
             </FooterContent></Col>
             </Row>
             <BottomLines/>

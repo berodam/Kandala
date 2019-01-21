@@ -73,7 +73,7 @@ export const About = (props) => {
             <br></br>
             <h1>칸달라</h1><h2>는</h2>
             <p>취미클래스와 전문가과정수업을</p>
-            <p>영어 또는 한국어 제공합니다.</p>          
+            <p>영어 또는 한국어로 제공합니다.</p>          
           </KorP>
           <Img src={thankYou} />
         </KorDetails>

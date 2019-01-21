@@ -15,7 +15,7 @@ class Home extends Component {
           <Col><ProductCard imageSrc='2.jpg' cardTitle='Products' to='/products'/></Col>
         </Row>
         <Row>
-          <Col><ProductCard imageSrc='4.jpg' cardTitle='Craft Lesons' to='/crafts'/></Col>
+          <Col><ProductCard imageSrc='4.jpg' cardTitle='Craft Lessons' to='/crafts'/></Col>
           <Col><ProductCard imageSrc='5.jpg' cardTitle='Korean Lessons' to='/koreanLessons'/></Col>
           <Col>
             <InstaCard cardTitle='Latest from Kandala' to='https://www.instagram.com/kandala.korea/' />
