@@ -78,7 +78,7 @@ export const Products = (props) => {
             <KorP fontsize={3}>
               <h1>칸달라</h1><h2>&nbsp;대표제품</h2>
               <p>&nbsp;&nbsp;&nbsp;&nbsp;계란용기 석고방향제</p>
-              <h1>풍부한 향</h1><h2>&nbsp;고리고</h2>
+              <h1>풍부한 향</h1><h2>&nbsp;그리고</h2>
               <p>&nbsp;&nbsp;&nbsp;&nbsp;독특한 디자인</p> 
             </KorP>
           </TextContainer>
