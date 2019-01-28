@@ -123,7 +123,7 @@ export default class NavBarClass extends React.Component {
               </UncontrolledDropdown>
               <NavItem>
                 <CenterAnchor>
-                  <Icon iconUrl={contactIcon} mainBar href="mailto:koreanlessonsforyou@gmail.com" afterContent="Contact Us"/>
+                  <Icon iconUrl={contactIcon} mainBar href="mailto:kandala.korea@gmail.com" afterContent="Contact Us"/>
                 </CenterAnchor>
               </NavItem>
               <NavItem>
