@@ -24,6 +24,9 @@ const JumbotronFlex = (props) => {
 }; 
 
 const TextWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 10px;
   @media (max-width: 768px) {
     margin: 0;
