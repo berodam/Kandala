@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardHeader } from 'reactstrap';
 import styled from 'styled-components';
@@ -11,7 +10,7 @@ import PropTypes from 'prop-types';
 
 //  original widget:
 // <!-- SnapWidget -->
-{/* <iframe src="https://snapwidget.com/embed/609686" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:160px; height:160px"></iframe> */}
+// <iframe src="https://snapwidget.com/embed/609686" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:160px; height:160px"></iframe>
 // <script src="https://snapwidget.com/js/snapwidget.js"></script>
 // <iframe src="https://snapwidget.com/embed/605956" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; ">
 // </iframe>
