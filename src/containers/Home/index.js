@@ -11,12 +11,12 @@ class Home extends Component {
       <Container>
         <Jumbotron KorSpan="칸달라" EngSpan="Kandala"/>
         <Row>
-          <Col><ProductCard imageSrc='1.jpg' cardTitle='About Kandala' to='/about'/></Col>
-          <Col><ProductCard imageSrc='2.jpg' cardTitle='Products' to='/products'/></Col>
+          <Col><ProductCard imageSrc='about.jpg' cardTitle='About Kandala' to='/about'/></Col>
+          <Col><ProductCard imageSrc='product.jpg' cardTitle='Products' to='/products'/></Col>
         </Row>
         <Row>
-          <Col><ProductCard imageSrc='4.jpg' cardTitle='Craft Lessons' to='/crafts'/></Col>
-          <Col><ProductCard imageSrc='5.jpg' cardTitle='Korean Lessons' to='/koreanLessons'/></Col>
+          <Col><ProductCard imageSrc='craft90deg.jpg' cardTitle='Craft Lessons' to='/crafts'/></Col>
+          <Col><ProductCard imageSrc='korean_lessons.jpg' cardTitle='Korean Lessons' to='/koreanLessons'/></Col>
           <Col>
             <InstaCard cardTitle='Latest from Kandala' to='https://www.instagram.com/kandala.korea/' />
           </Col>   

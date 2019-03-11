@@ -85,7 +85,7 @@ export const Crafts = (props) => {
           </TextContainer>
         </EngDetails>
         <ButtonContainer>
-          <a href='https://smartstore.naver.com/kandala'><Button>More Info</Button></a>
+          <a href='http://naver.me/FnLhllAR'><Button>More Info</Button></a>
         </ButtonContainer>
         <KorDetails>
           <TextContainer>

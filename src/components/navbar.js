@@ -102,7 +102,7 @@ export default class NavBarClass extends React.Component {
                 <Link to="/products">Products</Link>
               </NavItem>
               <NavItem>
-                <NavLink href="http://smartstore.naver.com/kandala">Store</NavLink>
+                <NavLink href="https://c5c3b.app.goo.gl/LhdtNRfW4z2HU9zE9">Store</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>

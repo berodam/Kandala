@@ -71,7 +71,7 @@ export const Products = (props) => {
           </TextContainer>
         </EngDetails>
         <ButtonContainer>
-          <a href='https://smartstore.naver.com/kandala'><Button>Buy Now</Button></a>
+          <a href='https://c5c3b.app.goo.gl/LhdtNRfW4z2HU9zE9'><Button>Buy Now</Button></a>
         </ButtonContainer>
         <KorDetails>
           <TextContainer>
